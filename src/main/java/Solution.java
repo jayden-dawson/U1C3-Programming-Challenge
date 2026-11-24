@@ -8,78 +8,83 @@ public class Solution {
     private int idNumber;
 
     public Solution(String model, int id) {
-        //implement code here
+        calcModel = model;
+        idNumber = id;
     }
 
     public Solution(int id) {
-        //implement code here
+        calcModel = "TI-84";
+        idNumber = id;
     }
 
     public String getCalcModel() {
-        //implement code here
-        return "";
+        String getModel = calcModel;
+        return getModel;
     }
 
     public void setCalcModel(String newModel) {
-        //implement code here
+        calcModel = newModel;
     }
 
     public int getIdNumber() {
-        //implement code here
-        return 0;
+        int getId = idNumber;
+        return getId;
     }
 
     public void setIdNumber(int newId) {
-        //implement code here
+        idNumber = newId;
     }
 
     public void incrementId() {
-        //implement code here
+        idNumber += 1;
     }
 
     public double add(double num1, double num2) {
-        //implement code here
-        return 0.00;
+        double sum = num1 + num2;
+        return sum;
     }
 
     public double subtract(double num1, double num2) {
-        //implement code here
-        return 0.00;
+        double subtraction = num1 - num2;
+        return subtraction;
     }
 
     public double multiply(double num1, double num2) {
-        //implement code here
-        return 0.00;
+        double product = num1 * num2;
+        return product;
     }
 
     public int quotient(int num1, int num2) {
-        //implement code here
-        return 0;
+        int quotient = num1 / num2;
+        return quotient;
     }
 
     public int remainder(int num1, int num2) {
-        //implement code here
-        return 0;
+       int remainder = num1 % num2;
+        return remainder;
     }
 
     public String divisionResult(int num1, int num2) {
-        //implement code here
-        return "";
+        int remainder = num1 % num2;
+        int quotient = num1 / num2;
+        String str1 = quotient + " R " + remainder;
+        return str1;
     }
 
     public String coordinatePair(int x, int y) {
-        //implement code here
-        return "";
+        String str2 = ("(" + x + ", " + y + ")");
+        return str2;
     }
 
     public int average(int num1, int num2) {
-        //implement code here
-        return 0;
+         double num3 = (num1 + num2) / 2.0;
+         int num4 = (int) (num3 + .5);
+        return num4;
     }
 
     public String info() {
-        //implement code here
-        return "";
+        String str3 = "This calculator is a model " + calcModel + " with id " + idNumber;
+        return str3;
     }
 
 }
